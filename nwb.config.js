@@ -1,4 +1,6 @@
 const path = require('path');
+const webpack = require('webpack');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   type: 'react-component',
@@ -18,6 +20,12 @@ module.exports = {
       '@material-ui/styles': path.resolve('./', 'node_modules', '@material-ui/styles'),
       react: path.resolve('./', 'node_modules', 'react'),
       'react-dom': path.resolve('./', 'node_modules', 'react-dom'),
+    },
+    extra: {
+      plugins: [
+        new CleanWebpackPlugin(),
+        new webpack.IgnorePlugin(/@blueprintjs\/(core|icons)/),
+      ],
     },
   },
 };

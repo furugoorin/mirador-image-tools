@@ -1,1 +1,1 @@
-export miradorImageToolsPlugin from './plugins/miradorImageToolsPlugin';
+export { miradorImageToolsPlugin } from './plugins/miradorImageToolsPlugin';

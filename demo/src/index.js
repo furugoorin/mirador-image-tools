@@ -1,5 +1,5 @@
 import Mirador from 'mirador/dist/es/src/index';
-import { miradorImageToolsPlugin } from '../../src';
+import { miradorImageToolsPlugin } from '../../src/plugins/miradorImageToolsPlugin';
 
 const config = {
   id: 'demo',
